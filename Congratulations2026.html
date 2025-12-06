@@ -7,6 +7,97 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    /* === НОВОГОДНИЙ СТИЛЬ — ПОЗДРАВЛЕНИЕ 2026 === */
+
+body {
+  background: linear-gradient(135deg, #e6f7e6 0%, #f0f8f0 100%);
+  font-family: 'Times New Roman', Times, serif;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #8B0000; /* Тёмно-бордовый */
+  text-align: center;
+  font-size: 2.6em;
+  margin: 20px 0 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+h2 {
+  color: #006400; /* Тёмно-зелёный */
+  border-left: 6px solid #D4AF37; /* Золото */
+  padding-left: 12px;
+  margin-top: 35px;
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 18px;
+  padding: 0 10px;
+}
+
+/* Стиль для цитаты — работает даже с "кривыми" кавычками */
+p.quote {
+  color: #D4AF37; /* Золотой */
+  border-left: 4px solid #8B0000;
+  font-style: italic;
+  padding: 12px 20px;
+  margin: 25px 40px;
+  background-color: rgba(212, 175, 55, 0.08);
+  font-family: Georgia, serif;
+}
+
+/* Ссылка "Назад" */
+a {
+  color: #8B0000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 2px solid #8B0000;
+  border-radius: 25px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #8B0000;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Списки кроссвордов */
+.crossword ol {
+  padding-left: 30px;
+}
+
+.crossword li {
+  margin: 12px 0;
+  padding: 6px 0;
+}
+
+.crossword li strong {
+  color: #8B0000;
+}
+
+/* Английский блок — тёплый акцент */
+#english-crossword {
+  background-color: #fffaf0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px dashed #d2b48c;
+}
+
+/* Адаптация под мобильные */
+@media (max-width: 600px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.4em; }
+  p.quote { margin: 20px 10px; }
+}
     <h1>Поздравление с Новым 2026 годом!</h1>
 
     <p>Приближается один из любимых праздников в России — Новый год! Вся страна окунается в атмосферу волшебства: на улицах зажигаются гирлянды, в магазинах появляются ёлочные игрушки и мандарины, а дома начинают готовиться к встрече праздника с особым трепетом. Этот день символизирует не только завершение старого года, но и надежду на всё самое лучшее в будущем.</p>
