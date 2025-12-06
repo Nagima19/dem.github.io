@@ -1,13 +1,24 @@
-body
+/* === Подключение шрифта (только один раз!) === */
+@font-face {
+  font-family: "Pudelinka";
+  src: url("Fonts/pudelinka.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === Стили для цитат === */
 blockquote.q {
-color: #D4AF37;
-border-left: 4px solid #8B0000;
-font-style: italic;
-}{
-	background-color: #d2b48c;
-	margin-left: 20%;
-	margin-right: 20%;
-	border: 2px dotted black;
-	padding: 10px 10px 10px 10px;
-	font-family: sans serif;
-    }
+  color: #D4AF37;
+  border-left: 4px solid #8B0000;
+  font-style: italic;
+}
+
+/* === Стили для body === */
+body {
+  background-color: #d2b48c;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px dotted black;
+  padding: 10px;
+  font-family: sans-serif; /* исправлено: sans-serif (через дефис!) */
+}
