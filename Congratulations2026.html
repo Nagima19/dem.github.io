@@ -3,110 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поздравление!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Поздравление и структура домена</title>
+    <style>
+        /* === НОВОГОДНИЙ СТИЛЬ + БЛОГ === */
+        body {
+            background: linear-gradient(135deg, #e6f7e6 0%, #f0f8f0 100%);
+            font-family: 'Times New Roman', Times, serif;
+            color: #2c2c2c;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #8B0000;
+            font-size: 2.6em;
+            margin: 20px 0 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #006400;
+            border-left: 6px solid #D4AF37;
+            padding-left: 12px;
+            margin: 35px 0 20px;
+            font-size: 1.8em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 18px;
+            padding: 0 10px;
+        }
+
+        .quote {
+            color: #D4AF37;
+            border-left: 4px solid #8B0000;
+            font-style: italic;
+            padding: 12px 20px;
+            margin: 25px 40px;
+            background-color: rgba(212, 175, 55, 0.08);
+            font-family: Georgia, serif;
+        }
+
+        a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #8B0000;
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #8B0000;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .crossword ol {
+            padding-left: 30px;
+        }
+
+        .crossword li {
+            margin: 12px 0;
+            padding: 6px 0;
+        }
+
+        .crossword li strong {
+            color: #8B0000;
+        }
+
+        #english-crossword {
+            background-color: #fffaf0;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed #d2b48c;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.4em; }
+            .quote { margin: 20px 10px; }
+        }
+    </style>
 </head>
 <body>
-    /* === НОВОГОДНИЙ СТИЛЬ — ПОЗДРАВЛЕНИЕ 2026 === */
 
-body {
-  background: linear-gradient(135deg, #e6f7e6 0%, #f0f8f0 100%);
-  font-family: 'Times New Roman', Times, serif;
-  color: #2c2c2c;
-  margin: 0;
-  padding: 20px;
-  line-height: 1.6;
-}
-
-h1 {
-  color: #8B0000; /* Тёмно-бордовый */
-  text-align: center;
-  font-size: 2.6em;
-  margin: 20px 0 30px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-  font-weight: bold;
-}
-
-h2 {
-  color: #006400; /* Тёмно-зелёный */
-  border-left: 6px solid #D4AF37; /* Золото */
-  padding-left: 12px;
-  margin-top: 35px;
-  font-size: 1.8em;
-}
-
-p {
-  font-size: 1.1em;
-  margin-bottom: 18px;
-  padding: 0 10px;
-}
-
-/* Стиль для цитаты — работает даже с "кривыми" кавычками */
-p.quote {
-  color: #D4AF37; /* Золотой */
-  border-left: 4px solid #8B0000;
-  font-style: italic;
-  padding: 12px 20px;
-  margin: 25px 40px;
-  background-color: rgba(212, 175, 55, 0.08);
-  font-family: Georgia, serif;
-}
-
-/* Ссылка "Назад" */
-a {
-  color: #8B0000;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  border: 2px solid #8B0000;
-  border-radius: 25px;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  background-color: #8B0000;
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Списки кроссвордов */
-.crossword ol {
-  padding-left: 30px;
-}
-
-.crossword li {
-  margin: 12px 0;
-  padding: 6px 0;
-}
-
-.crossword li strong {
-  color: #8B0000;
-}
-
-/* Английский блок — тёплый акцент */
-#english-crossword {
-  background-color: #fffaf0;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px dashed #d2b48c;
-}
-
-/* Адаптация под мобильные */
-@media (max-width: 600px) {
-  h1 { font-size: 2em; }
-  h2 { font-size: 1.4em; }
-  p.quote { margin: 20px 10px; }
-}
+    <!-- Поздравление -->
     <h1>Поздравление с Новым 2026 годом!</h1>
 
     <p>Приближается один из любимых праздников в России — Новый год! Вся страна окунается в атмосферу волшебства: на улицах зажигаются гирлянды, в магазинах появляются ёлочные игрушки и мандарины, а дома начинают готовиться к встрече праздника с особым трепетом. Этот день символизирует не только завершение старого года, но и надежду на всё самое лучшее в будущем.</p>
     
     <p>В преддверии праздника многие семьи любят проводить время за разгадыванием кроссвордов. Особенно популярны среди школьников и взрослых тематические головоломки — например, русский кроссворд, посвящённый новогодним традициям, символам и персонажам, таким как Дед Мороз, Снегурочка или ёлка. Такие задания не только развлекают, но и помогают лучше узнать культуру своей страны.</p>
     
-    <p class=”quote”>Но если вы изучаете иностранные языки, почему бы не совместить полезное с приятным? В канун Нового года можно попробовать разгадать английский кроссворд, в котором встречаются слова, связанные с зимними праздниками: Santa Claus, snowman, presents, fireworks. Это отличный способ потренировать язык и почувствовать новогоднее настроение одновременно!</p>
+    <p class="quote">Но если вы изучаете иностранные языки, почему бы не совместить полезное с приятным? В канун Нового года можно попробовать разгадать английский кроссворд, в котором встречаются слова, связанные с зимними праздниками: Santa Claus, snowman, presents, fireworks. Это отличный способ потренировать язык и почувствовать новогоднее настроение одновременно!</p>
 
-    <!-- Ссылка "Назад" -->
     <p><a href="index.html">← Назад</a></p>
 
     <!-- Русский кроссворд -->
@@ -142,50 +142,56 @@ a:hover {
             <li><strong>Place where Santa lives</strong> — North Pole</li>
         </ol>
     </div>
-📧 **[Напишите мне](kaldarovanagima9@gmail.com)**
 
-# Структура доменного имени моего сайта  
-*Актуально на 13 января 2026 года*
+    <!-- БЛОГ О ДОМЕНЕ -->
+    <hr style="margin: 50px 0; border: 1px solid #ccc;">
+    
+    <p><a href="mailto:kaldarovanagima9@gmail.com">📧 Напишите мне</a></p>
 
-Доменное имя — это удобочитаемый адрес сайта в интернете, который заменяет сложный числовой IP-адрес. Оно организовано иерархически справа налево, от самого общего уровня к самому конкретному.
+    <h2>Структура доменного имени моего сайта</h2>
+    <p><em>Актуально на 13 января 2026 года</em></p>
 
-Рассмотрим структуру доменного имени моего сайта:  
-**`https://github.com/Nagima19/dem.github.io`**
+    <p>Доменное имя — это удобочитаемый адрес сайта в интернете, который заменяет сложный числовой IP-адрес. Оно организовано иерархически справа налево, от самого общего уровня к самому конкретному.</p>
 
-## Уровни иерархии доменного имени:
+    <p>Рассмотрим структуру доменного имени моего сайта:<br>
+    <strong><code>https://nagima19.github.io</code></strong></p>
 
-1. **Корневой домен (Root Domain)**  
-   Обозначается точкой (`.`) в конце полного доменного имени, но обычно скрывается. Например: `ваш-логин.github.io.`  
-   Этот уровень управляется корневыми DNS-серверами.
+    <h3>Уровни иерархии доменного имени:</h3>
 
-2. **Домен верхнего уровня (Top-Level Domain, TLD)**  
-   → `.io`  
-   Это домен верхнего уровня. Хотя `.io` изначально был национальным доменом Британской территории в Индийском океане, сегодня он популярен среди разработчиков и стартапов.
+    <ol>
+        <li><strong>Корневой домен (Root Domain)</strong><br>
+            Обозначается точкой (<code>.</code>) в конце полного доменного имени (например, <code>nagima19.github.io.</code>). Управляется корневыми DNS-серверами.</li>
 
-3. **Домен второго уровня (Second-Level Domain, SLD)**  
-   → `github`  
-   Это имя сервиса, зарегистрировавшего зону в домене `.io` — в данном случае, GitHub.
+        <li><strong>Домен верхнего уровня (TLD)</strong><br>
+            → <code>.io</code><br>
+            Национальный домен Британской территории в Индийском океане, но широко используется в IT.</li>
 
-4. **Поддомен третьего уровня (Subdomain)**  
-   → `ваш-логин`  
-   Это ваше уникальное имя пользователя на GitHub. Оно указывает на ваш персональный сайт, размещённый через GitHub Pages.
+        <li><strong>Домен второго уровня (SLD)</strong><br>
+            → <code>github</code><br>
+            Зарегистрирован компанией GitHub в зоне <code>.io</code>.</li>
 
-Таким образом, иерархия домена выглядит так:
-ваш-логин     → поддомен (уровень 3)
+        <li><strong>Поддомен третьего уровня</strong><br>
+            → <code>nagima19</code><br>
+            Это моё имя пользователя на GitHub — оно указывает на мой сайт через GitHub Pages.</li>
+    </ol>
+
+    <p>Иерархия домена:</p>
+    <pre style="background:#f9f9f9; padding:12px; border-left:3px solid #8B0000; font-family:monospace;">
+nagima19     → поддомен (уровень 3)
    ↓
-github        → домен второго уровня (уровень 2)
+github       → домен 2-го уровня
    ↓
-io            → домен верхнего уровня (уровень 1)
+io           → домен верхнего уровня (TLD)
    ↓
-.             → корневой домен (уровень 0)
+.            → корневой домен
+    </pre>
 
-Эта структура позволяет системе DNS точно определить, где находится ваш сайт, и направить пользователя по нужному адресу.
+    <blockquote style="border-left: 4px solid #D4AF37; padding-left: 15px; color: #555; margin: 20px 0;">
+        💡 Если бы я использовала собственный домен (например, <code>nagima.site</code>), структура была бы проще: <code>nagima</code> (2-й уровень) + <code>.site</code> (TLD).
+    </blockquote>
 
-> 💡 **Примечание**: Если вы подключите собственный домен (например, `mysite.com`), структура изменится: `www.mysite.com` будет содержать поддомен `www`, основной домен `mysite` и TLD `.com`.
+    <p><strong>Создано:</strong> 13 января 2026 г.<br>
+    <strong>Автор:</strong> Nagima</p>
 
----
-
-Создано: **13 января 2026 г.**  
-Автор: [Nagima]
 </body>
 </html>
