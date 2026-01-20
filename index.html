@@ -4,20 +4,26 @@
 <meta charset="UTF-8">
 <title>Мой блог</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
-
 <style>
-  @font-face {
-    font-family: 'Pudelinka';
-    src: url('pudelinka.ttf') format('truetype');
+  .snowflake {
+    position: fixed;
+    top: -20px;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    user-select: none;
+    z-index: 9999;
+    animation: fall linear forwards;
   }
-  .fancy-quote {
-    font-family: 'Pudelinka', cursive;
-    font-size: 1.4em;
-    text-align: center;
-    margin: 1.5em 0;
+
+  @keyframes fall {
+    to {
+      transform: translateY(105vh) rotate(360deg);
+    }
   }
 </style>
 
+<script>
 </head>
 <body>
 
