@@ -22,3 +22,12 @@ body {
   padding: 10px;
   font-family: sans-serif; /* исправлено: sans-serif (через дефис!) */
 }
+<style>
+  @font-face {
+    font-family: 'Pudelinka';
+    src: url('pudelinka.ttf') format('truetype');
+  }
+  .pudelinka-only {
+    font-family: 'Pudelinka', cursive;
+  }
+</style>
