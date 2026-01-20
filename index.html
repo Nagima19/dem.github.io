@@ -1,6 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+   <style>
+  .snowflake {
+    position: fixed;
+    top: -20px;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    user-select: none;
+    z-index: 9999;
+    animation: fall linear forwards;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(105vh) rotate(360deg);
+    }
+  }
+</style>
+
+<script>
+  // Создаём снежинки при загрузке страницы
+  document.addEventListener('DOMContentLoaded', () => {
+    const snowflakes = '❄❅❆';
+    const container = document.body;
+
+    for (let i = 0; i < 50; i++) {
+      const snow = document.createElement('div');
+      snow.innerHTML = snowflakes.charAt(Math.floor(Math.random() * snowflakes.length));
+      snow.classList.add('snowflake');
+      
+      // Случайная позиция по горизонтали
+      snow.style.left = Math.random() * 100 + 'vw';
+      // Случайная скорость (от 5 до 15 секунд)
+      snow.style.animationDuration = (5 + Math.random() * 10) + 's';
+      // Случайный размер
+      const size = 0.5 + Math.random() * 1.5;
+      snow.style.fontSize = (12 + size * 20) + 'px';
+      snow.style.opacity = 0.4 + Math.random() * 0.6;
+
+      container.appendChild(snow);
+    }
+  });
+</script>
+<meta charset="UTF-8">
 <meta charset="UTF-8">
 <title>Мой блог</title>
   <link type="text/css" rel="stylesheet" href="style.css" />
