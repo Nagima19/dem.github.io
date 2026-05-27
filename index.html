@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-   <style>
-  .snowflake {
-    position: fixed;
-    top: -20px;
-    color: #fff;
-    font-size: 24px;
-    text-shadow: 0 0 5px rgba(255,255,255,0.8);
-    user-select: none;
-    z-index: 9999;
-    animation: fall linear forwards;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(105vh) rotate(360deg);
-    }
-  }
-</style>
-
-<script>
-  // Создаём снежинки при загрузке страницы
-  document.addEventListener('DOMContentLoaded', () => {
-    const snowflakes = '❄❅❆';
-    const container = document.body;
-
-    for (let i = 0; i < 50; i++) {
-      const snow = document.createElement('div');
-      snow.innerHTML = snowflakes.charAt(Math.floor(Math.random() * snowflakes.length));
-      snow.classList.add('snowflake');
-      
-      // Случайная позиция по горизонтали
-      snow.style.left = Math.random() * 100 + 'vw';
-      // Случайная скорость (от 5 до 15 секунд)
-      snow.style.animationDuration = (5 + Math.random() * 10) + 's';
-      // Случайный размер
-      const size = 0.5 + Math.random() * 1.5;
-      snow.style.fontSize = (12 + size * 20) + 'px';
-      snow.style.opacity = 0.4 + Math.random() * 0.6;
-
-      container.appendChild(snow);
-    }
-  });
-</script>
-<meta charset="UTF-8">
 <meta charset="UTF-8">
 <title>Мой блог</title>
-  <link type="text/css" rel="stylesheet" href="style.css" />
- <style>
+<link type="text/css" rel="stylesheet" href="style.css" />
+
+<style>
+  /* ВЕСЕННИЙ СТИЛЬ */
+  body {
+    background-color: #f1f8e9; /* Очень светлый зеленый фон */
+    color: #33691e; /* Темно-зеленый текст для удобства чтения */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  h2 {
+    color: #558b2f; /* Цвет молодой травы */
+    border-bottom: 2px solid #c5e1a5;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  a {
+    color: #7cb342; /* Светло-зеленые ссылки */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #33691e;
+    text-decoration: underline;
+  }
+
+  blockquote {
+    background-color: #dcedc8; /* Пастельный лайм */
+    border-left: 5px solid #8bc34a;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    border-radius: 4px;
+  }
+
+  .link-block a {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #aed581;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+
+  .link-block a:hover {
+    background-color: #f1f8e9;
+    transform: translateY(-2px);
+  }
+
+  code {
+    background-color: #e8f5e9;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #2e7d32;
+  }
+
+  pre {
+    background-color: #ffffff;
+    border: 1px solid #c5e1a5;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 8px;
+    color: #555;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  /* Шрифт Pudelinka */
   @font-face {
     font-family: 'pudelinka.ttf';
     src: url('pudelinka.ttf') format('truetype');
@@ -232,4 +266,4 @@ Pekingese: 0.66%
 </p>
 
 </body>
-</html>     
+</html>
